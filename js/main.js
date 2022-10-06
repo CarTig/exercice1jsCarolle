@@ -56,7 +56,7 @@ let nombresPremiers;
 for(let nombresPremiers = 2; nombresPremiers < 100; nombresPremiers++){
     console.log(nombresPremiers);
     do{document.write(nombresPremiers)}
-    while(nombresPremiers/nombresPremiers == 1 && nombresPremiers/1 == nombresPremiers);
+    while(nombresPremiers/1 == nombresPremiers);
     // do{console.log(nombresPremiers);
     // }while(nombresPremiers < 100);
 
