@@ -1,6 +1,10 @@
 //exercice1a
 alert('Bonjour tout le monde !');
 
+//variante
+let hello = "Bonjour tout le monde";
+console.log(hello);
+
 //exercice1b
 let popUpAccueil = 'Bonjour ',
     prenom,
