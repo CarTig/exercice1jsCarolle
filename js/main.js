@@ -102,6 +102,12 @@ Ecrire une page HTML faisant apparaitre la table de multiplication
 pour les entiers compris entre 1 et 9 et présenter le résultat 
 dans un tableau [10 x 10].
 */
+for (let ligne=1; ligne<=10; ligne++){
+    for (let colonne=1; colonne<=10; colonne++){
+        console.log(ligne * colonne);
+        document.write("<td>" + ligne * colonne + "</td>");
+    }
 
 
+}
 
