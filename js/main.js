@@ -45,6 +45,23 @@ if(age >= ageAccepte){
     ageErrone();
 }
 
+// autre solution 
+
+let age1 = 0;
+do {
+        age1 = parseInt(prompt("Entrer votre age"));
+        if (age1>0 && age1<18) {
+            alert('Vous êtes mineur vous ne pouvez pas entrer');
+        }
+        else if (age1>=18) {
+            alert("c'est bon vous pouvez passer");
+        }
+        else{
+            alert("ce n'est pas possible, veuillez recommencer");
+        }
+    }while (age<0);
+
+
 
 /* exercice4 boucle de while dans une boucle for, et en utilisant 3 variables
 Ecrire une page HTML faisant apparaitre 
@@ -65,6 +82,19 @@ for(let nombresPremiers = 2; nombresPremiers < 100; nombresPremiers++){
     // }while(nombresPremiers < 100);
 
 }
+
+//Solution exercice 4
+for(let nombresPremiers = 2; nombresPremiers < 100; nombresPremiers++){
+    resultat = true;
+    for (i=2; i<= nombresPremiers/2; i++) {
+        if(nombresPremiers%i===0){
+            resultat = false;
+        }
+    }
+    if (resultat === true){
+        document.write(nombresPremiers, " ");
+    }
+  
 
 /*
 Exercice 5 : boucle for (insertion des balises HTML dans les scripts). [moyen]
